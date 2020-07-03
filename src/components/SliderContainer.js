@@ -15,6 +15,10 @@ class SliderContainer extends React.Component {
         const sliderContainer = document.querySelector('.slider-container');
         if (this.wheelTimer) {
             clearTimeout(this.wheelTimer);
+            console.log('Ну да 1 коммит');
+            console.log('Первый фиксап');
+            console.log('Второй коммит');
+            console.log('Второй фиксап');
         }
         this.wheelTimer = setTimeout(() => {
             if (e.deltaY > 0) {
