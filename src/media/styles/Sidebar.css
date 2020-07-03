@@ -1,0 +1,116 @@
+.sidebar {
+    position: absolute;
+    height: 100%;
+    width: 100%
+}
+.sidebar__img {
+    position: relative;
+    top: 45px;
+    left: 20px;
+    width: 30px;
+    height: 30px;
+    z-index: 2;
+}
+
+.header__logo-container {
+    display: flex;
+}
+
+.sidebar__img:hover + .sidebar__menu {
+    animation: open-sidebar 0.25s ease-in-out;
+    opacity: 1;
+    width: 37%;
+}
+
+.sidebar__menu {
+    transition: all 0.5s;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    opacity: 0;
+    display: block;
+    height: 100%;
+    background-color: #fff;
+    padding: 0 30px;
+    overflow: scroll;
+    -ms-overflow-style: none;
+    z-index: 2;
+    
+}
+
+.sidebar__menu::-webkit-scrollbar {
+    display: none;
+  }
+
+.sidebar__menu:hover {
+    width: 37%;
+    opacity: 1;  
+}
+
+.sidebar__menu__navigation {
+    display: flex;
+    flex-direction: column;
+    padding: 80px 10px 0 0;
+    text-transform: uppercase;
+    color: #000;
+}
+
+.sidebar__menu__navigation-link {
+    font-size: 40px;
+    font-weight: 600;
+    letter-spacing: 2px;
+}
+
+[class~="sidebar__menu__navigation-link"]:last-of-type {
+    margin-top: 30px;
+}
+
+.sidebar__menu__navigation__info {
+    margin-top: 76px;
+    cursor: pointer;
+}
+
+.sidebar__menu__navigation__info__block {
+    margin: 25px 0;
+    display: flex;
+    flex-direction: column;
+    font-size: 14px;
+}
+
+.sidebar__menu__navigation__info__block-link {
+    height: 30px;
+    margin-bottom: 5px;
+    word-spacing: 5px;
+}
+
+a {
+    text-decoration: none;
+}
+
+.sidebar__menu__navigation-link:link {
+    color: #000;
+}
+
+.sidebar__menu__navigation-link:visited {
+    color: #000;
+}
+
+.sidebar__menu__navigation__info__block-link:link {
+    color: #000;
+}
+
+.sidebar__menu__navigation__info__block-link:visited {
+    color: #000;
+}
+
+@keyframes open-sidebar {
+    from {
+        width: 0%;
+        transform: translateX(-80%);
+    }
+    to {
+        width: 37%;
+        transform: translateX(0);
+    }
+}

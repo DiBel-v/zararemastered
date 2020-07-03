@@ -1,0 +1,85 @@
+.header {
+    display: flex;
+    position: fixed;
+    top: 0;
+    justify-content: space-between;
+    height: 100px; 
+    width: 100%;
+    overflow: visible;
+    text-transform: uppercase;
+    z-index: 1;
+}
+
+.header__logo {
+    width: 170px;
+    height: 70px;
+    padding: 25px 0 0 80px;
+}
+
+.header__search {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.header__search-txt {
+    font-size: 24px;
+    font-weight: 700;
+    color:rgb(121, 95, 47);
+}
+
+.header__search-input {
+    margin-left: 10px;
+    background: none;
+    border: none;
+    color: rgb(121, 95, 47);
+    border-bottom: 2px solid rgb(121, 95, 47);
+    outline: none;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.header__search-input::placeholder {
+    color: rgba(121, 95, 47, 0.4);
+}
+
+/* меню навигации */
+.header__navigation-menu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    font-size: 14px;
+}
+
+.header__actions {
+    list-style-type: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+    padding: 0;
+    margin-right: 20px;
+}
+
+.header__actions__item {
+    position: relative;
+    margin-left: 20px;
+}
+
+.header__actions__item-link:visited {
+    color: rgb(121, 95, 47);
+}
+
+.header__actions__item-link:link {
+    color: rgb(121, 95, 47);
+}
+#basket {
+    fill: rgb(121, 95, 47);
+}
+#basket-counter {
+    position: absolute;
+    top: 5px;
+    left: 12px;
+    color: rgb(121, 95, 47);
+}
